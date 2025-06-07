@@ -8,7 +8,7 @@ export class HomeService {
   http = inject(HttpClient)
   constructor() { }
 
-  baseUrl = "http://localhost:8080"
+  baseUrl = "http://backend-service:8080"
 
   welcomePage(){
     return this.http.get(`${this.baseUrl}`);
